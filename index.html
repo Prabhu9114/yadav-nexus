@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadav Nexus | Enterprise Operations & Digital Systems</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'spin-slow': 'spin 15s linear infinite',
+                        'float-slow': 'float 8s ease-in-out infinite',
+                        'float-delayed': 'float 10s ease-in-out 3s infinite',
+                        'pulse-glow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) scale(1)' },
+                            '50%': { transform: 'translateY(-20px) scale(1.05)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .animate-slide-up {
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+        /* Glowing Border Shimmer */
+        @keyframes borderPulse {
+            0%, 100% { border-color: rgba(56, 189, 248, 0.2); box-shadow: 0 0 15px rgba(56, 189, 248, 0.05); }
+            50% { border-color: rgba(168, 85, 247, 0.5); box-shadow: 0 0 25px rgba(168, 85, 247, 0.15); }
+        }
+        .cyber-card {
+            animation: borderPulse 5s ease-in-out infinite;
+        }
+
+        /* Subtle Background Grid Pattern */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-[#020617] text-slate-100 font-sans min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden bg-grid selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Glowing Background Auras -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none animate-float-slow"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-purple-600/10 rounded-full blur-[140px] pointer-events-none animate-float-delayed"></div>
+
+    <!-- Main Container -->
+    <div class="max-w-md w-full relative z-10 flex flex-col items-center text-center space-y-6">
+
+        <!-- Crisp Modern Logo & Brand Header -->
+        <div class="relative w-full flex flex-col items-center animate-slide-up space-y-3">
+            <!-- Rotating Glow Ring Behind Icon -->
+            <div class="relative w-28 h-28 mx-auto flex items-center justify-center">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 blur-md opacity-70 animate-spin-slow"></div>
+                <div class="relative w-full h-full rounded-full bg-slate-950 border border-slate-800 flex items-center justify-center shadow-2xl">
+                    <span class="text-3xl font-black bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent tracking-wider">YN</span>
+                </div>
+                <!-- Status Ping Dot -->
+                <span class="absolute bottom-1 right-2 w-3.5 h-3.5 bg-emerald-400 border-2 border-slate-950 rounded-full animate-ping"></span>
+                <span class="absolute bottom-1 right-2 w-3.5 h-3.5 bg-emerald-500 border-2 border-slate-950 rounded-full"></span>
+            </div>
+
+            <!-- Brand Name Typography -->
+            <div class="space-y-1">
+                <h1 class="text-2xl font-extrabold tracking-wider text-white flex items-center justify-center gap-2">
+                    YADAV NEXUS
+                    <span class="inline-flex items-center justify-center w-4 h-4 bg-cyan-500/20 text-cyan-400 rounded-full text-[10px]">✓</span>
+                </h1>
+                <p class="text-xs text-slate-400 max-w-xs mx-auto leading-relaxed">Enterprise operations architectures, industrial tracking systems, and zero-code digital products.</p>
+            </div>
+        </div>
+
+        <!-- Interactive Links Stack -->
+        <div class="space-y-3.5 w-full pt-1 animate-slide-up delay-2 opacity-0">
+            
+            <!-- Link 1: Project Command Center -->
+            <a href="https://github.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-cyan-500/10 backdrop-blur-xl flex items-center justify-between">
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                <span class="flex items-center gap-3.5 relative z-10">
+                    <span class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm">🚀</span>
+                    <span class="text-slate-200 group-hover:text-white font-semibold">Live Project Command Center</span>
+                </span>
+                <span class="text-slate-600 group-hover:text-cyan-400 transition-transform duration-300 group-hover:translate-x-1 relative z-10 font-bold">→</span>
+            </a>
+
+            <!-- Link 2: Digital Templates & Tools -->
+            <a href="https://gumroad.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-purple-500/10 backdrop-blur-xl flex items-center justify-between">
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                <span class="flex items-center gap-3.5 relative z-10">
+                    <span class="p-2.5 rounded-xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 shadow-sm">🛍️</span>
+                    <span class="text-slate-200 group-hover:text-white font-semibold">Get Digital Templates & Tools</span>
+                </span>
+                <span class="text-slate-600 group-hover:text-purple-400 transition-transform duration-300 group-hover:translate-x-1 relative z-10 font-bold">→</span>
+            </a>
+
+            <!-- Link 3: Brand Kits & Pitch Assets -->
+            <a href="https://canva.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-pink-500/10 backdrop-blur-xl flex items-center justify-between">
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                <span class="flex items-center gap-3.5 relative z-10">
+                    <span class="p-2.5 rounded-xl bg-pink-500/10 text-pink-400 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-sm">🎨</span>
+                    <span class="text-slate-200 group-hover:text-white font-semibold">Explore Brand Kits & Pitch Assets</span>
+                </span>
+                <span class="text-slate-600 group-hover:text-pink-400 transition-transform duration-300 group-hover:translate-x-1 relative z-10 font-bold">→</span>
+            </a>
+        </div>
+
+        <!-- Premium Enterprise CTA Button -->
+        <div class="w-full pt-2 animate-slide-up delay-3 opacity-0">
+            <a href="mailto:example@domain.com" class="relative group block w-full overflow-hidden rounded-2xl p-[1px] focus:outline-none shadow-xl">
+                <span class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 animate-pulse-glow"></span>
+                <span class="relative block bg-slate-950 group-hover:bg-transparent transition-colors duration-300 py-4 px-5 rounded-2xl text-white font-bold text-sm text-center shadow-inner">
+                    ✨ Request Enterprise Consultation
+                </span>
+            </a>
+        </div>
+
+        <!-- Footer Branding -->
+        <div class="pt-3 animate-slide-up delay-4 opacity-0">
+            <p class="text-[10px] text-slate-500 font-semibold tracking-widest uppercase">Yadav Nexus • Cloudflare & GitHub Infrastructure</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
