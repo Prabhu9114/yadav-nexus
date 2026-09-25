@@ -40,7 +40,6 @@
         .delay-3 { animation-delay: 0.3s; }
         .delay-4 { animation-delay: 0.4s; }
 
-        /* Glowing Border Shimmer */
         @keyframes borderPulse {
             0%, 100% { border-color: rgba(56, 189, 248, 0.2); box-shadow: 0 0 15px rgba(56, 189, 248, 0.05); }
             50% { border-color: rgba(168, 85, 247, 0.5); box-shadow: 0 0 25px rgba(168, 85, 247, 0.15); }
@@ -49,7 +48,6 @@
             animation: borderPulse 5s ease-in-out infinite;
         }
 
-        /* Subtle Background Grid Pattern */
         .bg-grid {
             background-size: 40px 40px;
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
@@ -66,20 +64,17 @@
     <!-- Main Container -->
     <div class="max-w-md w-full relative z-10 flex flex-col items-center text-center space-y-6">
 
-        <!-- Crisp Modern Logo & Brand Header -->
+        <!-- Logo & Brand Header -->
         <div class="relative w-full flex flex-col items-center animate-slide-up space-y-3">
-            <!-- Rotating Glow Ring Behind Icon -->
             <div class="relative w-28 h-28 mx-auto flex items-center justify-center">
                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 blur-md opacity-70 animate-spin-slow"></div>
                 <div class="relative w-full h-full rounded-full bg-slate-950 border border-slate-800 flex items-center justify-center shadow-2xl">
                     <span class="text-3xl font-black bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent tracking-wider">YN</span>
                 </div>
-                <!-- Status Ping Dot -->
                 <span class="absolute bottom-1 right-2 w-3.5 h-3.5 bg-emerald-400 border-2 border-slate-950 rounded-full animate-ping"></span>
                 <span class="absolute bottom-1 right-2 w-3.5 h-3.5 bg-emerald-500 border-2 border-slate-950 rounded-full"></span>
             </div>
 
-            <!-- Brand Name Typography -->
             <div class="space-y-1">
                 <h1 class="text-2xl font-extrabold tracking-wider text-white flex items-center justify-center gap-2">
                     YADAV NEXUS
@@ -92,32 +87,32 @@
         <!-- Interactive Links Stack -->
         <div class="space-y-3.5 w-full pt-1 animate-slide-up delay-2 opacity-0">
             
-            <!-- Link 1: Project Command Center -->
-            <a href="https://github.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-cyan-500/10 backdrop-blur-xl flex items-center justify-between">
+            <!-- Link 1: Enterprise Software Hub -->
+            <a href="https://yadav-nexus.pages.dev" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-cyan-500/10 backdrop-blur-xl flex items-center justify-between">
                 <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
                 <span class="flex items-center gap-3.5 relative z-10">
                     <span class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm">🚀</span>
-                    <span class="text-slate-200 group-hover:text-white font-semibold">Live Project Command Center</span>
+                    <span class="text-slate-200 group-hover:text-white font-semibold">Enterprise Software Hub</span>
                 </span>
                 <span class="text-slate-600 group-hover:text-cyan-400 transition-transform duration-300 group-hover:translate-x-1 relative z-10 font-bold">→</span>
             </a>
 
-            <!-- Link 2: Digital Templates & Tools -->
+            <!-- Link 2: Digital Systems & Templates -->
             <a href="https://gumroad.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-purple-500/10 backdrop-blur-xl flex items-center justify-between">
                 <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
                 <span class="flex items-center gap-3.5 relative z-10">
                     <span class="p-2.5 rounded-xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 shadow-sm">🛍️</span>
-                    <span class="text-slate-200 group-hover:text-white font-semibold">Get Digital Templates & Tools</span>
+                    <span class="text-slate-200 group-hover:text-white font-semibold">Digital Systems & Templates</span>
                 </span>
                 <span class="text-slate-600 group-hover:text-purple-400 transition-transform duration-300 group-hover:translate-x-1 relative z-10 font-bold">→</span>
             </a>
 
-            <!-- Link 3: Brand Kits & Pitch Assets -->
-            <a href="https://canva.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-pink-500/10 backdrop-blur-xl flex items-center justify-between">
+            <!-- Link 3: Yadav Nexus Portfolio -->
+            <a href="https://www.canva.com" target="_blank" class="group relative block w-full bg-slate-900/40 hover:bg-slate-800/80 border border-slate-800/80 cyber-card py-4 px-5 rounded-2xl font-medium text-sm transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-pink-500/10 backdrop-blur-xl flex items-center justify-between">
                 <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
                 <span class="flex items-center gap-3.5 relative z-10">
                     <span class="p-2.5 rounded-xl bg-pink-500/10 text-pink-400 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-sm">🎨</span>
-                    <span class="text-slate-200 group-hover:text-white font-semibold">Explore Brand Kits & Pitch Assets</span>
+                    <span class="text-slate-200 group-hover:text-white font-semibold">Yadav Nexus</span>
                 </span>
                 <span class="text-slate-600 group-hover:text-pink-400 transition-transform duration-300 group-hover:translate-x-1 relative z-10 font-bold">→</span>
             </a>
@@ -125,7 +120,7 @@
 
         <!-- Premium Enterprise CTA Button -->
         <div class="w-full pt-2 animate-slide-up delay-3 opacity-0">
-            <a href="mailto:example@domain.com" class="relative group block w-full overflow-hidden rounded-2xl p-[1px] focus:outline-none shadow-xl">
+            <a href="mailto:Prabhu.y1211@Gmail.com" class="relative group block w-full overflow-hidden rounded-2xl p-[1px] focus:outline-none shadow-xl">
                 <span class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 animate-pulse-glow"></span>
                 <span class="relative block bg-slate-950 group-hover:bg-transparent transition-colors duration-300 py-4 px-5 rounded-2xl text-white font-bold text-sm text-center shadow-inner">
                     ✨ Request Enterprise Consultation
